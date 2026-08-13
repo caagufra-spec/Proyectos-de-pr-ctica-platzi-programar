@@ -1,0 +1,46 @@
+<!-- Recuerda, el Index es el documento que por defecto va a revisar el navegador para extraer toda la información mínima necesaria para trabajar-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prueba 3 platzi</title>
+    <!-- El CSS debe de estar en la misma carpeta que el HTML -->
+    <link rel="stylesheet" href="Styles.css">
+    <!-- Diferencia entre <link> y <a> -- <a> viene de ancla y crea un enlace en el que la persona puede hacer click e ir a otra sección o pagina (vive en el body y es visible para el usuario) mientras que <link> conecta el documento HTML con un recurso externo que el navegador necesita para funcionar pero que el usuario no lo ve directamente (ve el resultado de integrarlo pero no es algo clickeable para el) -->
+        <!-- rel - le dice al navegador que tipo de archivo es y href - le indica donde encontrarlo -->
+    <!-- En páginas hechas por IA el CSS ya está integrado como una sesión pero lo recomendable es hacerlo como documentos separados por si queremos repetir el estilo con otra página -->
+</head>
+
+<body>
+<header> 
+    <!-- Acuerdate que el head y el header no son lo mismo, el Head va específicamente para el navegador y el Header es lo que ya está dentro de la página en sí, toda la información que quieras plantear -->
+    <h1> Tienda de prueba</h1>
+    <h2> Aquí es donde iría el subtitulo correspondiente</h2>
+    <nav>
+        <a href="#metodos">Métodos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+    <main> 
+        <!-- Tuve el mismo problema que con el footer y los <> cuidado con eso, y además en este caso puse pegados el inicio y el cierre, y el cierre siempre va después de que termina la section -->
+        <section id="metodos"> 
+        <p> Este es un ejemplo ficticio que solo sirve como referencia para ilustrar los pasos correspondientes para crear una página web en HTML con la estructura básica pero, además, dando el siguiente paso que es poder construir una estructura sólida para nuestra página que indique correctamente donde va cada elemento y poder modificarlo si es necesario 
+            Esta aprendiendo en este proceso y por ahora siento yo que vamos bastante bastante bien </p>
+            <h2> Este es el segundo titulo de esta primer parte</h2>
+            <p> AQUI NUEVAMENTE PLANTEAMOS TODA LA INFORMACIÓN REFERENTE A LA SECCION</p>
+        </section>
+    </main>
+
+    <!-- El footer debe de cerrar los dos <> aun que más abajo se haga el cierre del footer, sino, no lo conoce el navegador como footer 
+     Antes estaba así "<footer> id="contacto"" - el navegador lo ponia como texto plano 
+        Después "<footer id="contacto">  - fijate que se pone el > al final de la etiqueta -->
+    <footer id="contacto">
+        <!-- Aquí es importante recalcar que los nombres de archivos como imagenes se ponen tal cual, no debes de poner un guion para marcar los espacio-->
+        <img src="imagen PruebaV2.jpeg" alt="imagen de prueba ilustrativa" width="205">
+        <!-- Acuerdate que width es para establecer las dimensiones de la imagen dentro de la página (por defecto la pone gigante)-->
+        <p> Recuerda que la imagen debe de estar dentro de la misma carpeta donde estas haciendo la pagina para que el navegador la pueda referenciar</p>
+    </footer>
+</body>
+</html>

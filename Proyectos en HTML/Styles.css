@@ -1,0 +1,25 @@
+/* Cuando creas un archivo CSS nuevo, no esta enlazado a ningún HTML, entonces aún que tu lo edites la información no se verá reflejada hasta que conectes el HTML */ 
+/* Se compone de 2 partes: el selector - le dice a que elemento afecta la regla descrita y las propiedades - indican que es lo que cambia */
+ body { 
+    background-color: #FFA5AB;
+    font-family: "Playwrite DE SAS Guides", cursive;
+    color: #fff; 
+ }
+ h1 { 
+    color: #5B9B8E;
+    font-size: 2.5rem;
+ }
+ header { 
+   padding: 1.5rem 2rem;
+   border-bottom: 1px solid #1a1a1a
+ }
+ /* Para cambiar el color de algun enlace también vas a usar la etiqueta <nav> */ 
+ nav a {
+   color: #5B9B8E;
+ }
+ /* Aquí lo que estas diciendo con "nav a" es que todos los elementos <a> que estén en un <nav> que esten dentro de "nav" van a recibir esta modificación */
+ main { 
+   padding: 3rem 2rem;
+ }
+
+ /* Recuerda que CSS significa Cascading Style Sheets - esto significa que cuando tu tienes dos reglas que afectan a un mismo elemento, va a ganar (o se va a aplicar dicho efecto) la regla que esté más abajo en el archivo */
